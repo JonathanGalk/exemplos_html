@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #5e6ae7 10%, #8e54e9 70%);
+}
+/* Conteúdo */
+.content {
+    background-color: #fff;
+    width: 320px;
+    height: 90%;
+    margin-left: 2%;
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+/* Cabeçalho */
+.cabecalho {
+    width: 80%;
+}
+.cabecalho h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+    color: #6766e7;
+}
+.cabecalho p {
+    color: #6766e7;
+}
+
+/* Formulario */
+form input[type=text], input[type=password], input[type=email] {
+    outline: none;
+    border: none;
+}
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10%;
+}
+.user, .pas, .mail {
+    width: 80%;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, #5e6ae7 10%, #8e54e9 70%);
+    border-image-slice: 1;
+    margin: 5%;
+}
+form i {
+    font-size: 1.4em;
+    padding: 5px;
+    background: linear-gradient(90deg, #5e6ae7 10%, #8e54e9 70%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+form input[type="submit"] {
+    background: linear-gradient(90deg, #5e6ae7 10%, #8e54e9 70%);
+    width: 70%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    color: rgb(221, 220, 220);
+    font-weight: 100;
+    font-size: 12pt;
+    padding: 10px;
+    margin: 10px;
+    outline: none;
+}
+.cnt {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+.cnt label, a {
+    color: #6766e7;
+}
+.cnt .ck input[type=checkbox] {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgb(124, 115, 255);
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+.cnt .ck input[type=checkbox]:checked {
+    background-color: rgb(119, 119, 255);
+}
+/* Rodapé */
+.rodape {
+    width: 70%;
+    margin: 10px;
+    text-align: center;
+    color: #6766e7;
+}
+.rodape p {
+    padding: 5px;
+}
+.rodape p a b {
+    color: #6766e7;
+}
+/* Estilo do Sing Up */
+.cabup  h1 {
+    margin-top: 12%;
+}
+
+/* Media query */
+@media (min-width : 600px) and (max-width: 1500px) {
+    .rodape p a b:hover, .cnt a:hover {
+        transition: 0.3s;
+        color: rgb(0, 0, 104);
+        font-size: 12pt;
+    }
+    form input[type="submit"]:hover {
+        transition: 0.3s;
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        box-shadow: 2px 5px 5px rgb(146, 146, 146);
+    }
+}
