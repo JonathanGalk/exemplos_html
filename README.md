@@ -4,4 +4,4 @@ Não fiz curso em lugar nenhum, logo meus codigos estão a nivel de quem lê mui
 A maioria dos codigos são baseados em imagens que vejo na internet ou até mesmo flyer da caixa do correio.
 
 # OBS:
-## Todos os exemplos não foram feitos para serem responsivos, para melhor visualização, utilizar largura de 320px no navegador.
+## A maioria dos exemplos não foram feitos para serem responsivos, para melhor visualização, utilizar largura de 320px no navegador.
