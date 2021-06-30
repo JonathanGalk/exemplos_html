@@ -1,0 +1,143 @@
+/* 
+
+Menu  Simples Responsivo
+Simples menu responsivo feito com HTML e CSS
+fique livre para editar
+Autor: Jonathan Galk
+
+*/
+
+@charset "UTF-8";
+
+/* Reset simples */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Varela Round', sans-serif;
+}
+html, body {
+    height: 100%;
+}
+/* Cores e fonte */
+:root {
+    --color-bg: rgb(24, 24, 24);
+    --color-geral: rgb(139, 139, 139);
+}
+
+/* Cabeçalho */
+.cabecalho {
+    height: 100px;
+    background-color: var(--color-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecalho h1 {
+    color: var(--color-geral);
+    margin: 10px;
+}
+
+/* Botao de Abrir o menu */
+.btnMenu {
+    font-size: 2em;
+    margin: 10px;
+    color: var(--color-geral);
+    transition: .3s;
+    cursor: pointer;
+}
+.btnMenu:hover {
+    color: #fff;
+}
+
+/* Vamos trabalhar no menu */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* O menu vai ficar a direita, para dar o efeito de abrir */
+    height: 100%;
+    background-color: var(--color-bg);
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease-in-out;
+}
+.menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul a {
+    font-size: 1.3em;
+    color: var(--color-geral);
+    transition: .3s;
+}
+.menu ul a:hover {
+    color: #fff;
+    margin-left: 5px;
+}
+.menu ul li {
+    padding: 8px;
+}
+/* Botão de fechar o menu */
+.btnClose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2em;
+    margin: 10px;
+    color: var(--color-geral);
+    transition: .3s;
+    cursor: pointer;
+}
+.btnClose:hover {
+    color: #fff;
+}
+
+/* Agora vamos abrir e fechar o menu quando o checkbox for checked ou unchecked, esse é o pulo do gato aqui, sendo todo o resto mera estetica, podendo ser alterada a sua vontade, no nosso caso, o menu começa com largura(width) em 0, e quando e checked aumenta para 200px(valor que eu achei bom nesse caso) */
+
+#chk:checked ~ .menu {
+    width: 200px;
+}
+
+/* Vamos esconder o checkbox, ele não precisa aparecer mais */
+#chk {
+    display: none;
+}
+
+/* Vamos a Responsividade, essa quebra foi que mais se encaixou para o tamanho do menu(10 itens) menus com menos itens podem quebrar com valores menores que esse, fique livre para testar */
+@media (min-width: 685px) {
+    .btnMenu , .btnClose {
+        display: none;
+    }
+    .cabecalho h1 {
+        font-size: 1.4em;
+    }
+    .menu {
+        width: 90%;
+        position: static;
+        right: 0;
+        align-items: flex-end;
+    }
+    .menu ul a {
+        font-size: 0.900em;
+    }
+    .menu ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .menu ul a:hover {
+        color: #fff;
+        margin-left: 0;
+        border-bottom: 1px solid #fff;
+    }
+}

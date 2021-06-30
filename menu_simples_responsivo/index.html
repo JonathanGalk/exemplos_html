@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importando a fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu Simples - Responsivo</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>LO<br>GO</h1>
+
+        <!--Um checkbox  para simular o click no menu, assim vamos usar um label para marcar e desmarcar esse checkbox -->
+        <input type="checkbox"  id="chk">
+        <label for="chk" class="btnMenu">&equiv;</label><!--Apontamos para o ID do checkbox-->
+
+        <!--Agora nosso menu em si -->
+        <nav class="menu">
+            <label for="chk" class="btnClose">&times;</label><!--Aqui indicamos o mesmo ID do checkbox para desmarcar-->
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">História</a></li>
+                <li><a href="#">Valores</a></li>
+                <li><a href="#">Metas</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Filias</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>
