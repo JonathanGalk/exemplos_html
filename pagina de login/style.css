@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Wallpoet', cursive;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background-image: url("bg8.jfif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    background: rgba(255, 255, 255, 0.009);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+section {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 20px;
+    color: #c9d259;
+}
+header span {
+    color: tomato;
+}
+div {
+    padding: 6%;
+}
+.div-1 {
+    width: 80%;
+    height: 30px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    top: 3px;
+    left: 12px;
+    box-shadow: 5px -5px 5px 0px  #ffffff27;
+}
+.div-2 {
+    width: 80%;
+    height: 30px;
+    border: 2px solid #fff;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -5px 0px 5px 0px  #ffffff27;
+}
+.div-3 {
+    width: 80%;
+    height: 30px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: none;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    top: -3px;
+    left: 12px;
+    box-shadow: 5px 4px 5px 0px  #ffffff27;
+}
+.user {
+    background-color: rgba(255, 255, 255, 0.075);
+    border-radius: 50%;
+    margin: 30px;
+    padding: 30px;
+}
+.user i {
+    font-size: 2em;
+    color: #fff;
+}
+
+/* FOMULARIO */
+.inp {
+    width: 100%;
+    position: relative;
+    top: -30px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+.inp i {
+    font-size: 1.2em;
+    color: #fff;
+}
+.mail {
+    margin-left: 10px;
+}
+input[type=text],input[type=email],input[type=password] {
+    padding: 5px;
+    font-size: 0.875em;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+button[type=submit] {
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.137);
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #c9d259;
+}
+button[type=submit] span {
+    color: tomato;
+}
