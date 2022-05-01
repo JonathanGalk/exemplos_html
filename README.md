@@ -15,7 +15,7 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 **Login Form com 3 passos**  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/login_form2/sing_in.png)  
 
-**Login Form com Dark Mode**  
+**Login Form Dark**  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/login_form_dark_mode/resultado_roxo.png) 
 
 **Login Form com efeito de vidro**  
