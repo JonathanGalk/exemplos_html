@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <input type="checkbox" id="chk">
+        <!--FORMULARIO ONDE FICAM OS LOGINS -->
+        <div class="formulario">
+            <div class="login1">
+                <h1>Login</h1>
+                <form action="#">
+                    <div class="user">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Usuário" required>
+                    </div>
+                    <div class="senha">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+                    <input type="submit" value="Entrar">
+                </form>
+            </div>
+            <div class="login2">
+                <h1>Criar Conta</h1>
+                <form action="#">
+                    <div class="user">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Nome de Usuário" required>
+                    </div>
+                    <div class="senha">
+                        <i class="fas fa-key"></i>
+                        <input type="password" placeholder="Senha 2-64 caracteres" required>
+                    </div>
+                    <div class="email">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" placeholder="exemplo@exemplo.com(br)" required>
+                    </div>
+                    <input type="submit" value="Criar">
+                </form>
+            </div>
+            <div class="termos">
+                <a href="#">Politica de Privacidade</a>
+                <a href="#">Termos e Condições</a>
+            </div>
+        </div>
+        <!--PARTE DO FUNDO-->
+        <div class="login">
+            <h1>Já tem uma conta?</h1>
+            <label for="chk">
+                <span onclick="show()">Login</span>
+            </label> 
+        </div>
+        <div class="clogin">
+            <h1>Não tem uma conta?</h1>
+            <label for="chk">
+                <span onclick="show()">Criar Conta</span>
+            </label>
+        </div>
+    </main>
+    <script>
+        function show() {
+            var checkBox = document.getElementById("chk");
+            var login1 = document.getElementsByClassName("login1");
+            var login2 = document.getElementsByClassName("login2");
+            if (checkBox.checked == true){
+                setTimeout(function(){
+                    login2[0].style.display = "none";
+                    login1[0].style.display = "flex";
+                }, 1000);
+            } else {
+                setTimeout(function(){
+                    login2[0].style.display = "flex";
+                    login1[0].style.display = "none";
+                }, 1000)
+            };
+        };
+    </script>
+</body>
+</html>

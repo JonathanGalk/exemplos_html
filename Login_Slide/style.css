@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+body {
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+html {
+    height: 100%;
+}
+h1 {
+    color: #202426;
+}
+#chk, #chk1{
+    display: none;
+}
+main {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 320px;
+    height: 570px;
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    background-color: #6C733D;
+    border-radius: 15px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    top: -20px;
+    left: -17px;
+    background-color: #202426;
+    transition: 1s ease-in-out;
+    border-radius: 15px;
+}
+#chk:checked ~ .formulario {
+    left: -17px;
+    top: 180px;
+}
+
+.login1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+.login1 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.login2 {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+.login2 form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.login1 h1, .login2 h1 {
+    color: #9DA65D;
+}
+::placeholder {
+    font-size: 0.875em;
+}
+
+/* estilos dos formularios, span e link's*/
+.termos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.termos a {
+    font-size: 0.875em;
+    padding: 10px;
+    color: #8C8C88;
+}
+.termos a:hover {
+    color: #9DA65D;
+}
+.login label span, .clogin label span {
+    color: #8C8C88;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #202426;
+    cursor: pointer;
+    width: 130px;
+}
+.login label span:hover, .clogin label span:hover {
+    color: #9DA65D;
+}
+.clogin h1, .login h1 {
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
+.clogin, .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.clogin {
+    position: relative;
+    top: -30px;
+}
+form input {
+    padding: 5px;
+    margin: 5px;
+    background-color: #ffffff00;
+    outline: none;
+    border: none;
+    color: #9DA65D;
+}
+form i {
+    color: #6C733D;
+    padding: 5px;
+}
+form input[type=submit] {
+    color: #202426;
+    font-weight: 900;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #6C733D;
+    cursor: pointer;
+    width: 100px;
+}
+form input[type=submit]:hover {
+    color: #8C8C88;
+}
+.login1 h1, .login2 h1 {
+    padding: 5px;
+    margin: 10px;
+}
+.user, .senha, .email {
+    border: 1px solid #6C733D;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+/* Responsividade */
+
+
+@media (min-width: 768px) {
+    main { 
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 750px;
+        height: 200px;
+    }
+    .formulario {
+        top: -100px;
+        left: 20px;
+    }
+    #chk:checked ~ .formulario {
+        top: -100px;
+        left: 370px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    main { 
+        width: 950px;
+        height: 200px;
+    }
+    .formulario {
+        top: -100px;
+        left: 80px;
+    }
+    #chk:checked ~ .formulario {
+        top: -100px;
+        left: 520px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    main { 
+        width: 1000px;
+    }
+    #chk:checked ~ .formulario {
+        left: 570px;
+    }
+}
