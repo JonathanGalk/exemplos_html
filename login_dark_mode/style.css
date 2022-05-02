@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #000;
+    font-size: 10pt;
+}
+/* Cores gerais */
+:root {
+    --body-bg-color: rgb(245, 245, 245);
+    --content-bg-color: #fff;
+    --icons-box-color: rgb(181, 181, 181);
+    --linear-bg-color1: rgba(235, 2, 255, 1);
+    --linear-bg-color2: rgba(153, 21, 252, 1);
+    --submit-color: rgb(221, 220,220); 
+    --i-color: #000;
+    --geral-color: #000;
+}
+/* Cores do Dark Mode */
+.dark:root {
+    --body-bg-color: rgb(37, 37, 37);
+    --content-bg-color: rgb(31, 31, 31);
+    --icons-box-color: #c56cd6;
+    --i-color: #c56cd6;
+    --linear-bg-color1: #c56cd6;
+    --linear-bg-color2: #3425af;
+    --submit-color: rgb(221, 220,220);
+    --geral-color: #fff;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--body-bg-color);
+    transition: .3s ease-in;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+/* Conteúdo */
+.content {
+    background-color: var(--content-bg-color);
+    width: 80%;
+    height: 90%;
+    margin-left: 2%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgb(179, 177, 177);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s ease-in;
+}
+/* Cabeçalho */
+.cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icones {
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+}
+.icons {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 8px var(--icons-box-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    padding: 2%;
+}
+.icons i {
+    color: var(--i-color)
+}
+.cabecalho p {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--geral-color);
+}
+.cabecalho h1 {
+    padding: 10px;
+    font-weight: 900;
+    font-size: 25pt;
+    color: var(--geral-color);
+}
+hr {
+    background: linear-gradient(90deg, var(--linear-bg-color1) 0%, var(--linear-bg-color2) 70%);
+    width: 40px;
+    height: 5px;
+    border: none;
+    margin-left: 13px;
+}
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form label {
+    text-align: left;
+    width: 70%;
+}
+form input[type="email"], form input[type="password"] {
+    width: 70%;
+    padding: 13px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(221, 220, 220);
+    outline: none;
+    font-weight: 900;
+}
+.cnt {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+form input[type="submit"] {
+    background: linear-gradient(90deg, var(--linear-bg-color1) 0%, var(--linear-bg-color2) 70%);;
+    width: 70%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    color: var(--submit-color);
+    font-weight: 100;
+    font-size: 12pt;
+    padding: 10px;
+    margin: 10px;
+}
+
+.rodape {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+::placeholder {
+    font-weight: 100;
+    opacity: 0.5;
+}
+/* classe de fontes */
+.fnt b {
+    font-family: 'Roboto', sans-serif;
+    color: var(--geral-color);
+}
+/* Botão de mudar o modo de cor */
+.dark-mode {
+    background-color: var(--content-bg-color);
+    align-self: center;
+    transition: .3s ease-in;
+}
+
+.dark-mode i {
+    color: rgb(151, 151, 1);
+    padding: 3px;
+    font-size: 1.5em; 
+    cursor: pointer;
+}
+/* Micro responsividade */
+@media (min-width: 450px){
+    .content {
+        max-width: 420px;;
+    }
+
+}

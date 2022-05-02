@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="content">
+        <div class="cabecalho">
+            <h1 class="fnt">Log in</h1>
+            <hr>
+            <div class="icones">
+                <div class="icons">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <div class="icons">
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <div class="icons">
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+            <p>or use your email</p>
+        </div>
+        <form action="#">
+            <label for="fname" class="fnt"><b>Username</b></label>
+            <input type="email" name="fname" id="fname" placeholder="username or email">
+            <label for="psw" class="fnt"><b>Password</b></label>
+            <input type="password" name="psw" id="psw" placeholder="1-60 characters">
+            <div class="cnt">
+                <div class="ck">
+                    <input type="checkbox" name="chk" id="chk">
+                    <label for="chk" class="fnt"><b>Remember Me</b></label>
+                </div>
+                <a href="#" class="fnt"><b>Forgot Password?</b></a>
+            </div>
+            <input type="submit" value="Submit">
+            <div class="rodape">
+                <a href="#" class="fnt"><b>Privacy Policy</b></a>
+                <a href="#" class="fnt"><b>Terms & Conditions</b></a>
+            </div>
+        </form>
+        <input type="checkbox"  id="chek" style="display: none;">
+        <label for="chek" class="dark-mode"><i onclick="iconChange(this)" class="fas fa-moon"></i></label>
+    </div>
+    <script>
+        const html = document.querySelector("html");
+        const checkbox = document.getElementById("chek");
+
+        checkbox.addEventListener('change', function(){
+            html.classList.toggle('dark');
+              
+        });
+
+        /* função mudar o icone */
+        function iconChange(x) {
+            x.classList.toggle("fa-sun");
+        };
+
+    </script>
+</body>
+</html>
