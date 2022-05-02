@@ -8,6 +8,10 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 
 ### Segue os resultados dos codigos  
 
+[**Login Slide**](https://github.com/JonathanGalk/exemplos_html/tree/main/Login_Slide)  
+Obs: Ignorem a qualidade do gif, a ideia era por um video :) , ele é bem melhor que isso, existe um video no repositório.
+![alt Text](https://github.com/JonathanGalk/exemplos_html/blob/ac9bc26c2fe83f5491b3a17b0bbe7f02b64bba10/Login_Slide/resultado.gif)  
+
 [**Login com Modo Escuro**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_dark_mode)  
 ![alt Text](https://github.com/JonathanGalk/exemplos_html/blob/30b2e84a0ace21b8be5e7c7d66f42ef07faba7af/login_dark_mode/lg_dark_mode_res.png)  
 
