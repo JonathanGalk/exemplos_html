@@ -6,7 +6,11 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) em alguns casos usei ![image](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-### Segue os resultados dos codigos
+### Segue os resultados dos codigos  
+
+[**Login com Modo Escuro**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_dark_mode)  
+![alt Text](https://github.com/JonathanGalk/exemplos_html/blob/30b2e84a0ace21b8be5e7c7d66f42ef07faba7af/login_dark_mode/lg_dark_mode_res.png)  
+
 [**Texto com Gradiente**](https://github.com/JonathanGalk/exemplos_html/tree/main/Texto%20com%20Gradiente)  
 ![alt Texto em Gradiente](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/Texto%20com%20Gradiente/resultado_text.png) 
 
