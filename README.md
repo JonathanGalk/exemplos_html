@@ -22,10 +22,10 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 [**Login Form com efeito de vidro**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_glass)  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/login_glass/resultado.png)  
 
-[**Uma Pagina de Contato**](https://github.com/JonathanGalk/exemplos_html/tree/main/pagina%20de%20contato)
+[**Uma Pagina de Contato**](https://github.com/JonathanGalk/exemplos_html/tree/main/pagina%20de%20contato)  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/pagina%20de%20contato/resultado.png) 
 
-[**Uma pagina de Login "diferenciada"**](https://github.com/JonathanGalk/exemplos_html/tree/main/pagina%20de%20login)
+[**Uma pagina de Login "diferenciada"**](https://github.com/JonathanGalk/exemplos_html/tree/main/pagina%20de%20login)  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/pagina%20de%20login/resultado.png)  
 
 
