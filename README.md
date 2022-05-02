@@ -16,8 +16,8 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 [**Login Form com 3 passos**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_form2)  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/login_form2/sing_in.png)  
 
-[**Login Form Dark**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_form_dark_mode)  
-![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/login_form_dark_mode/resultado_roxo.png) 
+[**Login Form Dark**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_dark)  
+![alt text](https://github.com/JonathanGalk/exemplos_html/blob/511dbc9ba67d3a5b4947ac4ab3ef1e3e365f52a6/login_dark/resultado_roxo.png) 
 
 [**Login Form com efeito de vidro**](https://github.com/JonathanGalk/exemplos_html/tree/main/login_glass)  
 ![alt text](https://github.com/JonathanGalk/exemplos_html/blob/b705f225af04f67caf06c87e23fe15711b8ae48d/login_glass/resultado.png)  
