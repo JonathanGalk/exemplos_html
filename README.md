@@ -8,6 +8,9 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 
 ### Segue os resultados dos codigos  
 
+[**Animação Scroll do Mouse**](https://github.com/JonathanGalk/exemplos_html/tree/main/scroll_down_animation)  
+![lat text](https://github.com/JonathanGalk/imagens/blob/7d3fb087e05f1321106491c9386fbbd0cb24e9a6/scroll_animation.gif)  
+
 [**Login Slide**](https://github.com/JonathanGalk/exemplos_html/tree/main/Login_Slide)  
 Obs: Ignorem a qualidade do gif, a ideia era por um video :) , ele é bem melhor que isso, existe um video no repositório.
 ![alt Text](https://github.com/JonathanGalk/exemplos_html/blob/ac9bc26c2fe83f5491b3a17b0bbe7f02b64bba10/Login_Slide/resultado.gif)  
