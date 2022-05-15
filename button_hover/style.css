@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: rgb(44, 39, 46);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 120px;
+  height: 60px;
+  border: 2px solid rgb(117, 49, 136);
+  border-radius: 10px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+.btn:hover {
+  background-color: rgb(117, 49, 136);
+  color: #000;
+  transition: 1s ease;
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: transparent;
+  height: 50%;
+  width: 100%;
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  filter: blur(8px);
+  transition: 1s ease;
+}
+.btn:hover::before {
+  background: rgb(117, 49, 136);
+  top: 70px;
+}
