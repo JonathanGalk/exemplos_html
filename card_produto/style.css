@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Fredoka', sans-serif;
+}
+
+/* FIM RESET */
+main {
+  width: 100%;
+  max-width: 500px;
+}
+/* Titulo */
+.titulo {
+  color: #7500C5;
+  text-align: center;
+  padding: 5px;
+  margin: 5;
+  font-size: 2.5em;
+}
+
+/*  Produto */
+.produto {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.avaliacao {
+  background-color: #7500C5;
+  clip-path: polygon(100% 0, 100% 100%, 48% 70%, 0 100%, 0 0);
+  height: 200px;
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+.avaliacao p {
+  font-size: 1.3em;
+  color: #E9E9E9;
+  padding: 5px;
+}
+.avaliacao .fa-star {
+  color: #ffe606;
+  font-size: 1.5em;
+  padding: 5px;
+  margin-top: 10px;
+}
+.avaliacao .fa-comment-dots {
+  color: #E9E9E9;
+  font-size: 1.5em;
+  padding: 5px;
+  margin-top: 12px;
+}
+.img-produto {
+  width: 600%;
+  height: 390px;
+  background-image: url('./imgens/garrafa_preta.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+} 
+.cores {
+  background-color: #E9E9E9;
+  box-shadow: 5px 8px 5px #5D5D5D;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  position: relative;
+  top: 100px;
+  right: 60px;
+}
+.cores ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.cores ul li span  {
+  padding: 5px;
+  display: block;
+  transition: all .2s ease-in-out;
+}
+.cores .cor {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 9px;
+  background-color: #27262b;
+  cursor: pointer;
+}
+.cores .cor:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 4px 2px #000;
+}
+.cores .cor2 {
+  background-color: #29467b;
+}
+.cores .cor3 {
+  background-color: #ac2028;
+}
+.cores .cor4 {
+  background-color: #a2ad39;
+}
+.cores .cor5 {
+  background-color: #90734e;
+}
+
+/* DESCRIÇÃO */
+.desc {
+  text-align: center;
+  font-size: 0.990em;
+  color: #27262b7c;
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+
+/*  CARRINHO */
+.carrinho {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: #27262b;
+  width: 100%;
+  height: 70px;
+}
+
+/* Aparecenia do "quantidade" */
+input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #7500C5;
+    text-align: center;
+    font-size: 1.5em;
+    color: #27262b;
+}
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+.quantidade button {
+  background-color: #7500C5;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+}
+.fa-minus, .fa-plus {
+  font-size: 1.5em;
+  color: #fff;
+}
+.add {
+  background-color: #7500C5;
+  border-radius: 10px;
+  padding: 5px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.add input {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.fa-cart-shopping {
+  color: #fff;
+  font-size: 1.5em;
+}

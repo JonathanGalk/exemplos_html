@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c33c2821a.js" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="style.css">
+    <title>Card de Produto</title>
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Garrafa Térmica</h1>
+        <section class="produto">
+            <div class="avaliacao">
+                <p>4.7</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-comment-dots"></i>
+            </div>
+            <div class="img-produto" id="produto1">
+
+            </div>
+            <div class="cores">
+                <ul>
+                    <li><span class="cor1 cor" onmouseenter="img1()"></span></li>
+                    <li><span class="cor2 cor" onmouseenter="img2()"></span></li>
+                    <li><span class="cor3 cor" onmouseenter="img3()"></span></li>
+                    <li><span class="cor4 cor" onmouseenter="img4()"></span></li>
+                    <li><span class="cor5 cor" onmouseenter="img5()"></span></li>
+                </ul>
+            </div>
+        </section>
+
+        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, impedit dignissimos amet maxime voluptate eveniet aliquid laudantium obcaecati vel beatae odit tempora laboriosam consequatur culpa fugiat dolore inventore est ipsam.</p>
+
+        <section class="carrinho">
+            <div class="quantidade">
+                <button onclick="menos()" class="a"><i class="fa-solid fa-minus"></i></button>
+                <input  min=0 id="total" type="number" value="1">
+                <button onclick="mais()" class="b"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="add">
+                <input type="submit" value="Comprar"><i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </section>
+    </main>
+    
+
+<!-- JS para funções de mais e menos e troca de imagem -->
+    <script>
+        function mais(){
+            var atual = document.getElementById("total").value;
+            var novo = atual - (-1); //Evitando Concatenacoes
+            document.getElementById("total").value = novo;
+        }
+
+        function menos(){
+            var atual = document.getElementById("total").value;
+            if(atual > 0) { //evita números negativos
+                var novo = atual - 1;
+                document.getElementById("total").value = novo;
+            }
+        }
+        // Trocando as imagens, obs: sei nada de JS kkkk
+        function img1(){
+            document.getElementById("produto1").style.backgroundImage = "url('./imgens/garrafa_preta.jpg')";
+        }
+        function img2(){
+            document.getElementById("produto1").style.backgroundImage = "url('./imgens/garrafa_azul.jpg')";
+        }
+        function img3(){
+            document.getElementById("produto1").style.backgroundImage = "url('./imgens/garrafa_vermelha.jpg')";
+        }
+        function img4(){
+            document.getElementById("produto1").style.backgroundImage = "url('./imgens/garrafa_verde.jpg')";
+        }
+        function img5(){
+            document.getElementById("produto1").style.backgroundImage = "url('./imgens/garrafa_dourada.jpg')";
+        }
+    </script>
+</body>
+</html>
