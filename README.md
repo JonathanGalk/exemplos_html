@@ -8,6 +8,9 @@ A maioria dos codigos são baseados em imagens que vejo na internet ou até mesm
 
 ### Segue os resultados dos codigos 
 
+[**Card de Produto**](https://github.com/JonathanGalk/exemplos_html/tree/main/card_produto)  
+![alt text](https://github.com/JonathanGalk/imagens/blob/1776e902c7f8d2da2d37c272e3d852c725167a5f/CardProduto.png)  
+
 [**Button Hover Effect**](https://github.com/JonathanGalk/exemplos_html/tree/main/button_hover)  
 ![alt text](https://github.com/JonathanGalk/imagens/blob/1c528a919002d4895c51795fd5f94efc088867d7/button_hover.gif)  
 
