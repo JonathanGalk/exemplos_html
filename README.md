@@ -1,6 +1,6 @@
 # HTML
 Todos os codigos aqui são feitos de modo direto, podendo haver repetição excessiva, cabendo refatoração posteior.
-Não fiz curso em lugar nenhum, logo meus codigos estão a nivel de quem lê muito, em principal a W3C e videos aleatórios por ai.
+Não tenho curso superior em lugar nenhum, logo meus codigos estão a nivel de quem lê muito, em principal a W3C e videos aleatórios por ai.
 A maioria dos codigos são baseados em imagens que vejo na internet ou até mesmo flyer da caixa do correio.
 ## Tecnologias usadas:  
 ![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
